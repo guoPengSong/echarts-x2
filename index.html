@@ -63,6 +63,11 @@
 			        type: 'map3d',
 			        mapType: 'world',
 			        background: 'img/starfield.jpg',
+			        roam:{
+//			        	autoRotate:true,
+			        	autoRotateAfterStill:1,
+			        	focus:"China"
+			        },
 			        baseLayer: {
 			            backgroundColor: '',
 			            backgroundImage: 'img/earth.jpg',
@@ -82,7 +87,7 @@
 			        },
 			        markPoint: {
 			            symbol: 'image://./img/add2.png',
-			            symbolSize: 3,
+			            symbolSize: 2,
 			            distance: 0,
 			            // orientation: 'normal',
 			            orientationAngle: 45,
