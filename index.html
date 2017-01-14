@@ -12,9 +12,22 @@
 			html,body,#main{
 				height: 100%;
 			}
+			#main{
+				position: relative;
+			}
+			h1{
+				width: 90px;
+				height: 60px;
+				background: url(img/cloudpi.png) no-repeat;
+				position: absolute;
+				left: 10px;
+				top: 10px;
+				z-index: 1;
+			}
 		</style>
 	</head>
 	<body>
+		<h1></h1>
 		<div id="main"></div>
 	</body>
 </html>
@@ -45,16 +58,7 @@
             var chart = ec.init(document.getElementById('main'));
 
 			chart.setOption({
-			    title: {
-			        text: '小云派用户分布图',
-			        subtext: 'From businessinsider',
-			        sublink: 'http://xiaoyunpai.cn',
-			        x: 'center',
-			        y: 'top',
-			        textStyle: {
-			            color: 'white'
-			        }
-			    },
+			    
 			    tooltip: {
 			        formatter: '{b}'
 			    },
